@@ -23,6 +23,16 @@ let userName = prompt("Введіть ваше ім'я");
 alert("Вітаємо, " + userName);
 // TASK 8
 const submitAction = confirm("Підтвердіть вашу дію");
-
+if (submitAction) {
+  alert("Дякую за підтвердження!");
+} else {
+  alert("Дію відмінено!");
+}
 // TASK 9
-const dangerAction = alert("Ця дія небезпечна. Ви впевнені?");
+let dangerAction = confirm("Ця дія небезпечна. Ви впевнені?");
+
+if (dangerAction) {
+  alert("Дію підтвердженно");
+} else {
+  alert("Дію відмінено!");
+}
